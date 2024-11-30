@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a list of links</title>
+    <style>
+        a{
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover{
+            color: red;
+        }
+        a:active{
+            color: green;
+        }
+
+         /* Task -2 */
+
+         h1{
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)
+         }
+        p {
+            font-size: 1.2rem; 
+            line-height: 1.6;  
+            text-align: justify; 
+         }
+
+         /* Task -3 */
+        div.card{
+            border: 1px solid grey;
+            padding: 20px;
+            margin: 10px;
+            max-width: 300px;
+        }
+
+        /*--Task 4 -- */
+        div.contain {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh; 
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            }
+        .navbar {
+            display: flex;              
+            justify-content: space-around; 
+            width: 60%;                    
+            }
+        .navbar a {
+             text-decoration: none;         
+            color: black;              
+            font-size: 1.2rem;            
+            }
+
+/*--Task 5 -- */
+
+            .gallery {
+    display: grid;                    
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;                       
+}
+
+/* Image Styling */
+.gallery img {
+    width: 100%;                      
+    height: 250px;                       
+    border-radius: 8px;                
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;     
+    }
+}
+
+/*--Task 6 -- */
+
+.color-button {
+    background-color: blue;         
+    color: white;                  
+    padding: 10px 20px;            
+    border: none;                   
+    border-radius: 5px;             
+    font-size: 16px;                
+    cursor: pointer;               
+    transition: background-color 0.3s ease; 
+}
+.color-button:hover {
+    background-color: darkblue;     
+}
+
+/*--Task 7 -- */
+
+.scale-button {
+    width: 150px;                   
+    height: 50px;                  
+    background-color: blue;         
+    color: white;                  
+    font-size: 16px;               
+    border: none;                   
+    border-radius: 5px;             
+    cursor: pointer;               
+    transition: transform 0.3s ease; 
+}
+
+/* Button Hover Effect */
+.scale-button:hover {
+    transform: scale(1.2);          
+}
+
+
+    </style>
+
+        </head>
+        <body>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contacts</a></li>
+            <li><a href="">blog</a></li>
+        </ul>
+      
+
+
+        <!-- Task 2 -->
+         <h1>Welcome to My Webpage</h1>
+         <p>This is a website which contains a title and paragraph</p>
+
+          <!-- Task 3 -->
+
+         <div class="card">
+         <p>This is a simple card with a border, padding, and margin.</p>
+         </div>
+
+        <!-- Task 4 -->
+        <div class="contains">
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+        <!-- Task 5 -->
+
+        <!-- Photo Gallery -->
+<div class="gallery">
+    <img src="cat.jpeg" alt="Image 1">
+    <img src="nature.jpg" alt="Image 2">
+    <img src="kkr-logo.jpg" alt="Image 3">
+    <img src="image3.jpg" alt="Image 4">
+</div>
+
+ <!-- Task 6 -->
+
+ <button class="color-button">Click Here!</button>
+
+
+ <!-- Task 7 -->
+
+ <button class="scale-button">Hover Me</button>
+
+
+
+    
+
+</body>
+</html>
